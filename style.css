@@ -1,0 +1,138 @@
+body {
+	font-family: Courier New;
+}
+h1 {
+  text-align: center;
+}
+h1 img {
+	height: 4%;
+	width: 4%;
+}
+.col-xs-4 {
+	margin-left: 30px;
+	width: 370px;
+	height: 541px;
+	overflow: scroll;
+	border: 1px solid black;
+}
+.height {
+	position: absolute;
+	top: 160px;
+	left: 470px;
+}
+.weight {
+	position: absolute;
+	top: 210px;
+	left: 470px;
+}
+.stats {
+	position: absolute;
+	top: 150px;
+	left: 80px;
+	font-size: 9px;
+	width: 240px;
+	height: 175px;
+	overflow: scroll;
+}
+h3 {
+	text-align: center;
+}
+div[poke-img] {
+	text-align: center;
+}
+p {
+	text-align: center;
+}
+.types {
+	text-align: center;
+}
+.bug {
+	background: url('typeSym.png') no-repeat -154px -66px; 
+	width: 134px;
+	height: 127px;
+	zoom: 30%;
+}
+.dragon {
+	background: url('typeSym.png') no-repeat -63px -254px;
+	width: 119px;
+	height: 119px;
+	zoom: 30%;
+}
+.electric {
+	background: url('typeSym.png') no-repeat -248px -249px; 
+	width: 132px;
+	height: 129px;
+	zoom: 30%;
+}
+.fighting {
+	background: url('typeSym.png') no-repeat -443px -251px; 
+	width: 128px;
+	height: 127px;
+	zoom: 30%;
+}
+.fire {
+	background: url('typeSym.png') no-repeat -535px -64px; 
+	width: 133px;
+	height: 130px;
+	zoom: 30%;
+}
+.ghost {
+	background: url('typeSym.png') no-repeat -921px -62px; 
+	width: 131px;
+	height: 132px;
+	zoom: 30%;
+}
+.grass {
+	background: url('typeSym.png') no-repeat -1114px -67px; 
+	width: 132px;
+	height: 127px;
+	zoom: 30%;
+}
+.ground {
+	background: url('typeSym.png') no-repeat -635px -250px; 
+	width: 131px;
+	height: 128px;
+	zoom: 30%;
+}
+.ice {
+	background: url('typeSym.png') no-repeat -830px -251px; 
+	width: 128px;
+	height: 126px;
+	zoom: 30%;
+}
+.normal {
+	background: url('typeSym.png') no-repeat -1023px -251px; 
+	width: 128px;
+	height: 126px;
+	zoom: 30%;
+}
+.poison {
+	background: url('typeSym.png') no-repeat -158px -436px; 
+	width: 126px;
+	height: 124px;
+	zoom: 30%;
+}
+.psychic {
+	background: url('typeSym.png') no-repeat -350px -433px; 
+	width: 126px;
+	height: 126px;
+	zoom: 30%;
+}
+.rock {
+	background: url('typeSym.png') no-repeat -540px -437px; 
+	width: 124px;
+	height: 123px;
+	zoom: 30%;
+}
+.water {
+	background: url('typeSym.png') no-repeat -922px -435px; 
+	width: 125px;
+	height: 129px;
+	zoom: 30%;
+}
+.fairy {
+	background: url('typeSym.png') no-repeat -1118px -434px; 
+	width: 123px;
+	height: 126px;
+	zoom: 30%;
+}
