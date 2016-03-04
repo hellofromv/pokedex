@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pokemon Types</title>
+    <script src="jquery.js"></script>
+
+	</head>
+
+	<body>
+		<div poke-type></div>
+
+		<script>
+		  var myPokeObj = {};
+		  var pokeIndex;
+
+		  var allPokemonURL = 'http://pokeapi.co/api/v2/pokemon/';
+		  $.get(allPokemonURL, function(pokemonArray) {
+		    var firstGen = pokemonArray.slice(0, 151)
+
+		    firstGen.forEach(function(pokemonObj, index) {
+		      pokeIndex = index + 1;
+		      myPokeObj[pokemonObj.name] = {
+		        index: pokeIndex,
+		        pic: function(index) {
+		          return "http://pokeapi.co/media/img/" + index + ".png";
+		        }(pokeIndex)
+		      }
+		    });
+
+		  }, 'json');
+
+
+		  var iceURL = "http://pokeapi.co/api/v2/type/15/";
+		  $.get(iceURL, function(iceTypeObj) {
+		    var iceArray = iceTypeObj.pokemon.map(function(element) {
+					var pokemon = $('<img>');
+	        $(pokemon).attr('src', "http://pokeapi.co/media/img/" + myPokeObj[element.pokemon.name].index + ".png");
+	        
+	        $('div[poke-type]').append(pokemon);
+		    });
+		  }, 'json');
+		</script>
+	</body>
+</html>
