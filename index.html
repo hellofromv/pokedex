@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokedex</title>
+    <script src="jquery.js"></script>
+    <script src="sortTable.js"></script>
+    <script src="script.js"></script>
+    <link href="bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body id="body">
+    <div class="types">
+      <a href="bugIndex.html"><img class="bug"></a>
+      <a href="dragonIndex.html"><img class="dragon"></a>
+      <a href="electricIndex.html"><img class="electric"></a>
+      <a href="fightingIndex.html"><img class="fighting"></a>
+      <a href="fireIndex.html"><img class="fire"></a>
+      <a href="ghostIndex.html"><img class="ghost"></a>
+      <a href="grassIndex.html"><img class="grass"></a>
+      <a href="groundIndex.html"><img class="ground"></a>
+      <a href="iceIndex.html"><img class="ice"></a>
+      <a href="normalIndex.html"><img class="normal"></a>
+      <a href="poisonIndex.html"><img class="poison"></a>
+      <a href="psychicIndex.html"><img class="psychic"></a>
+      <a href="rockIndex.html"><img class="rock"></a>
+      <a href="waterIndex.html"><img class="water"></a>
+      <a href="fairyIndex.html"><img class="fairy"></a>
+    </div>
+
+    <h1><img src="pikachuWallpaper.gif"> Victoria's Pokedex <img src="pikachuWallpaper.gif"></h1>
+
+    <div data-container="pokemon-table" class="col-xs-4">
+      <table class="sortable table">
+        <tr>
+          <th>#</th>
+          <th>Pokemon</th>
+          <th class="sorttable_nosort">Team ?</th>
+        </tr>
+      </table>
+    </div>
+
+    <div data-container="pokedex" class="col-xs-8">
+      <img src="pokedex.gif">
+      <div data-container="hw" class="hw">
+        <h2 poke-height class="height"></h2>
+        <h2 poke-weight class="weight"></h2>
+      </div>
+
+      <div data-container="stats" class="stats">
+        <h3 poke-name class="name"></h3>
+        <div poke-img></div>
+        <h4 poke-types class="types"></h4>
+        <h4 poke-moves class="moves"></h4>
+      </div>
+    </div>
+
+    <div team-container="team" class="team col-xs-12">
+      <p></p>
+    </div>
+  </body>
+</html>
